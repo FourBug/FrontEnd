@@ -1,0 +1,119 @@
+<!-- RECAP INTERNAL CSS -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day2</title>
+ </head>
+ <body>
+    
+
+    <!-- 
+    INLINE CSS
+    In case of Inline CSS we face some problems
+    1. Maintainablity
+    2. Reuseablity
+    3. Global Styling
+    ============================================
+    <h1 style="color:brown; background-color: aqua; display: inline;">Hello India!</h1>
+    <h1 style="color: brown; background-color: aqua; display: inline;">Hello World!</h1>
+
+    ============================================
+    -To overcome this above problem, we have another way od styling that is Internal(CSS).
+    -Internal CSS is nothing, just we will use css inside the html file seprately.
+    -Inside head element, we are going to use style tag and inside tag we are going to apply css properties.
+    Quesiton : How will we style a particular element?
+    Answer : With the help of Selectors and Combinators.
+    =============================================================
+    CSS Selectors:
+    *    Universal Selector / Global Selector
+    id   (#id_name)        // Unique Selection
+    class   (.class_name) // Globally Selection
+    tag / element (tag_name)
+    -->
+
+    <!-- EXAMPLE OF SELECTORS -->
+    <!-- 
+     <h1>Hello India</h1>
+     <h3 class="aman">Hello India</h3>
+     <h2>Hello India</h2>
+     <h1 id="idname">Hello India</h1>
+     <h1 class="aman">Hello India</h1> 
+
+     <style>
+        /* 
+        selector{
+            property:value;
+        }
+            */
+        *{
+            color: brown;
+        }
+        #idname{
+            color: greenyellow;
+        }
+        .aman{
+            color: black;
+        }
+        h2{
+            color: aquamarine;
+        }
+    </style>
+     -->
+
+     <!-- CSS SELECTORS PRIORITY -->
+      <!-- 
+      <h1 id="name" class="classname">HELLO INDIA</h1>
+      <style>
+        h1{
+            color: red;
+        }
+        #name{
+            color: brown;
+        }
+        .classname{
+            color: green;
+        }
+      </style>
+      
+      CSS Selectors Priority
+      INLINE CSS - 1000%;
+      ID - 100%;
+      Class - 50%;
+      Tag/Type - 10%;
+      * Universal - 1%;
+
+      InlineCSS > ID > CLASS > TAG/TYPE > UNIVERSAL
+      -->
+
+      <!-- TAG AND TYPE SELECTOR EXAMPLES -->
+       <p>Hello 1</p>
+       <p>Hello 2</p>
+       <p>Hello 3</p>
+       <h3>Heading 4</h3>
+       <img src="../abc.jpg" alt="Name"><br>
+       <input type="text" placeholder="First Name..."><br>
+       <input type="text" placeholder="Last Name..."><br>
+       <input type="email" placeholder="Email Id...">
+
+       <style>
+        p{
+            background-color: seagreen;
+        }
+        h3{
+            background-color: red;
+        }
+        img{
+            width: 200px;
+            border: 5px dashed red;
+        }
+        input{
+            background-color: aqua;
+        }
+        input[type="email"]{
+            width: 300px;
+        }
+       </style>
+ </body>
+ </html>
