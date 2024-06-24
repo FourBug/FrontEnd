@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day3</title>
+</head>
+<body>
+    <!-- 
+    PSEUDO CLASS 
+     <p>Pragarph 1</p>
+     <p>Pragarph 2</p>
+     <p>Pragarph 3</p>
+     <p>Pragarph 4</p>
+     <p>Pragarph 5</p>
+     <p>Pragarph 6</p>
+     <p>Pragarph 7</p>
+     <p>Pragarph 8</p>
+     <p>Pragarph 9</p>
+     <p>Pragarph 10</p>
+     <button>Click Here!</button>
+     <h3> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem corporis voluptatum fugit magni voluptatibus sit quam eum consequuntur illo quo cumque harum ex illum, eaque debitis quisquam labore eligendi reprehenderit. </h3>
+     <style>
+        Psuedo Class
+        p{
+            color: red;
+        }
+        p:first-child{
+            background-color: black;
+        }
+        p:nth-child(3){
+            background-color: purple;
+        }
+        p:nth-child(7){
+            background-color: blue;
+        }
+        p:nth-child(even){
+            background-color: aqua;
+        }
+        button{
+            background-color: black;
+            color: white;
+        }
+        button:hover{
+            background-color: white;
+            color: red;
+            transition: 0.5s;
+        }
+        Psuedo Element
+        h3{
+            color: red;
+        }
+        h3::first-letter{
+          color: blue;  
+        }
+        h3::first-line{
+            color: aqua;
+        }
+    </style>
+     -->
+
+     <!-- EXAMPLE OF DIV BOXES 
+      <div class="main">
+        <div class="box">
+            <div class="box1">
+
+            </div>
+            <div class="box2">
+                <div class="subbox1">
+                    <p>Paragraph 1</p>
+                    <p>Paragraph 2</p>
+                    <p>Paragraph 3</p>
+                    <p>Paragraph 4</p>
+                </div>
+            </div>
+        </div>
+      </div>
+      -->
+
+      <!-- COMBINATORS SELECTORS -->
+
+      <!-- Adjentcent Sibling Selectors -->
+      <style>
+        /* For Adjentcent Sibling Selector Symbol : + */
+        h3+p{
+            background-color: red;
+        }
+        .box+p{
+            background-color: red;
+        }
+        .para2+p{
+            background-color: red;
+        }
+        /* Child Selector Symbol : > */
+        .box>p{
+            background-color: blue;
+        }
+      </style>
+       <div>
+        <p>para 1</p>
+        <p class="para2">para 2</p>
+        <p>para 3</p>
+        <p>para 4</p>
+        <h3>Heading 3</h3>
+        <p>para 5</p>
+        <div class="box">
+            <p>Hello</p>
+        </div>
+        <p>para 6</p>
+        <p>para 7</p>
+       </div>
+</body>
+</html>
