@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day4</title>
+</head>
+<body>
+    <!-- Descendant Selector -->
+     <!-- 
+     <div>
+        <p>paragrap 1</p>
+        <p>paragrap 2</p>
+        <h3>Heading 3</h3>
+        <div>
+            <p>Paragraph 1</p>
+            <p>Paragraph 2</p>
+            <div>
+                <p>paragrap 1</p>
+                <p>paragrap 2</p>
+                <h3>Heading 3</h3>
+            </div>
+        </div>
+     </div>
+     <style>
+        div div div h3{
+            background-color: green;
+        }
+     </style>
+      -->
+
+      <!-- General Sibling Selector -->
+      <!-- Sibling Selector Difference
+            element Just After a element : Adcendent Siblig +
+            All elements Just After a element : General Sibling ~
+    -->
+            <!-- 
+       <span id="parent">
+            <p>child 1</p>
+            <p>child 2</p>
+            <p>child 3</p>
+            <h3>Heading Child 3</h3>
+            <p>child 4</p>
+            <div>
+                <p>Paragraph 1</p>
+                <p>Paragraph 2</p>
+            </div>
+            <p>child 5</p>
+            <p>child 6</p>
+            <h3>Hello</h3>
+            <p>child 7</p>
+       </span>
+       <p>Paragraph Z</p>
+       <p>Paragraph Y</p>
+       <style>
+        div~p{
+            background-color: red;
+        }
+       </style>
+        -->
+       <div id="pricing-main-container">
+            <div id="upper-container">
+                <h1>Select A Plan That Right For Your Business</h1>
+                <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi iste, quisquam distinctio voluptatibus maiores corrupti labore delectus deleniti aliquid vero fugiat odit?</p>
+            </div>
+            <div id="lower-container">
+                <div>Plan 1</div>
+                <div>Plan 2</div>
+                <div>Plan 3</div>
+            </div>
+       </div>
+       <style>
+       #pricing-main-container{
+            border: 2px solid red;
+            padding: 10px;
+            width: 60%;
+            margin: 10px auto;
+       }
+       #upper-container{
+        text-align: center;
+        width: 70%;
+        margin: auto;
+       }
+       #upper-container p{
+        color: gray;
+        padding: 0px 5px;
+        margin: 5px 0px;
+       }
+       #lower-container{
+        border: 1px solid black;
+        padding: 10px;
+        text-align: center;
+        display: flex;
+       }
+       #lower-container div{
+        width: 30%;
+        height: 200px;
+        border: 1px solid red;
+        margin: auto;
+       }
+       </style>
+</body>
+</html>
