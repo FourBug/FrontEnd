@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day5</title>
+</head>
+<body>
+    <!-- 
+    <div id="box">
+        <div>DIV 1</div>
+        <div>DIV 2</div>
+        <div>DIV 3</div>
+        <div>DIV 4</div>
+    </div>
+    <style>
+        /* Without Using Flex Property */
+        #box{
+            border: 2px solid red;
+            padding: 10px;
+        }
+        #box>div{
+            border: 1px solid teal;
+            width: 150px;
+            height: 150px;
+            display: inline-block;
+            margin-left: 16px;
+        }
+    </style>
+     -->
+
+    <!-- USING FLEX PROPERTY
+     
+     <div id="box">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+     </div>
+     <style>
+        /* Flex Align-Content : it is similar to justify-content property according to functionality. But align items along Y-axis  whereas Justify content align items along X-axis.
+        Using Flex Property
+        */
+        
+        #box{
+            border: 2px solid red;
+            padding: 10px;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        #box>div{
+            text-align: center;
+            border: 1px solid teal;
+            width: 50px;
+        }
+     </style>
+     -->
+<!-- 
+     <div id="box">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+     </div>
+     <style>
+        
+        #box{
+            border: 2px solid red;
+            padding: 10px;
+            height: 300px;
+            display: flex;
+            /* align-items: stretch; default property */
+            align-items: flex-start;
+        }
+        #box>div{
+            border: 1px solid teal;
+            width: 60px;
+        }
+     </style>
+      -->
+
+     <!-- 
+
+      <div id="box">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+      </div>
+      <style>
+        /* Flex-direction : It decides to which direction childs are to be aligned
+        Default propery : flex-direction : row;
+        */
+        #box{
+            border: 2px solid red;
+            padding: 10px;
+            display: flex;
+            justify-content: space-evenly;
+            flex-direction: row-reverse;
+        }
+        #box>div{
+            border: 1px solid teal;
+            width: 60px;
+            text-align: center;
+        }
+      </style>
+       -->
+      <div id="box">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+      </div>
+      <style>
+        /* flex-wrap : its usually use for utilising screen size, we can say for creating responsive childs 
+        flex-wrap: nowrap; bydefault
+        flex-wrap:wrap; it make responsive;
+        flex-wrap:wrap-reverse; it make responsive;
+        */
+        #box{
+            border: 2px solid red;
+            padding: 10px;
+            display: flex;
+            flex-wrap: wrap-reverse;
+        }
+        #box>div{
+            border: 1px solid teal;
+            width: 200px;
+            height: 200px;
+        }
+      </style>
+</body>
+</html>
