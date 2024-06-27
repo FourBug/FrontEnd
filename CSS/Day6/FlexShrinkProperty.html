@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Shrink</title>
+    <style>
+        #parent{
+            border: 2px solid;
+            padding: 10px;
+            display: flex;
+        }
+        .child{
+            border: 1px solid teal;
+            padding: 10px;
+            background-color: yellow;
+            width: 200px;
+            text-align: center;
+            font-size: 25px;
+            font-weight: bold;
+        }
+        #child-1{
+            flex-shrink: 3;
+        }
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <div id="child-1" class="child">child 1</div>
+        <div class="child">child 2</div>
+        <div class="child">child 3</div>
+    </div>
+</body>
+</html>

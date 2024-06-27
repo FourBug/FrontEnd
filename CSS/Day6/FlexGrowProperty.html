@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Grow Property</title>
+    <style>
+        #parent{
+            border: 2px solid black;
+            padding: 10px;
+            display: flex;
+        }
+        #parent>div{
+            border: 1px solid teal;
+            padding: 10px;
+            background-color: yellow;
+            width: 70px;
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .child{
+            flex-grow: 2;
+        }
+        #child-1{
+            flex-grow: 4;
+        }
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <div id="child-1" class="child">Child 1</div>
+        <div class="child">Child 2</div>
+        <div class="child">Child 3</div>
+    </div>
+</body>
+</html>
