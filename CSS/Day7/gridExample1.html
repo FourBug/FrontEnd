@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Example</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: 100px 100px 150px 100px;
+            grid-template-rows: 50px 100px;
+            /* grid-row-gap: 10px;
+            grid-column-gap: 10px; */
+            gap: 10px;
+            border: 2px solid red;
+            padding: 10px;
+        }
+        .container>div{
+            border: 2px solid teal;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- BOX 1 -->
+     <div class="container">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+     </div>
+</body>
+</html>
