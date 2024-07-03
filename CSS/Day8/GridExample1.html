@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Example</title>
+    <style>
+        #box{
+            border: 2px solid teal;
+            padding: 10px;
+            display: grid;
+            grid-template-columns: 100px 100px 100px;
+            grid-template-rows: 100px 100px 100px;
+            gap: 10px;
+            grid-template-areas: 
+            "tl tl ylw"
+            "pur blu blu"
+            "greyel greyel sal";
+        }
+        #box>div:nth-child(1){
+            background-color: teal;
+            grid-area: tl;
+        }
+        #box>div:nth-child(2){
+            background-color: yellow;
+            grid-area: ylw;
+        }
+        #box>div:nth-child(3){
+            background-color: purple;
+            grid-area: pur;
+        }
+        #box>div:nth-child(4){
+            background-color: blue;
+            grid-area: blu;
+        }
+        #box>div:nth-child(5){
+            background-color: greenyellow;
+            grid-area: greyel;
+        }
+        #box>div:nth-child(6){
+            background-color: salmon;
+            grid-area: sal;
+        }
+        
+        #box>div{
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <div>Division-1</div>
+        <div>Division-2</div>
+        <div>Division-3</div>
+        <div>Division-4</div>
+        <div>Division-5</div>
+        <div>Division-6</div>
+    </div>
+</body>
+</html>

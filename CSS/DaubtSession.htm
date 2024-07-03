@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        h2{
+           font-weight: bold;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        p{
+            color: grey;
+            font-size: 15px;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            background-color: black;
+        }
+        #body{
+            background-color: white;
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 80%;
+            height: 100vh;
+        }
+        #main-1{
+            text-align: center;
+        }
+        #main-2{
+            width: 100%;
+            height: 300px;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+        }
+        #main-3{
+            width: 100%;
+            height: 300px;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+        }
+        .child{
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.623);
+            border: 2px solid gray;
+            border-radius: 20px;
+            width: 300px;
+            height: 250px;
+            text-align: center;
+            margin: 5px;
+        }
+        .image{
+            width: 300px;
+            height: 70%;
+            border-radius: 20px;           
+        }
+        img{
+            border-radius: 20px;
+            height:100%;
+            width: 100%;
+        }
+        .name>img{
+            width: 100px;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="body">
+        <div id="main-1">
+            <h2>Meet Our Mentors</h2>
+            <p>Being Hashiras themselves, the Curriculum Team is</p>
+            <p>an experienced group of instructors teaching</p>
+    </div>
+        <div id="main-2">
+            <div class="child">
+                <div class="image">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnesWXDksDCd1iYHT-TW2rpAC0xARF249gUA&s" alt="">
+                </div>
+                <div class="name">
+                    <h4>Shinobu Kocho</h4>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjvDbFirMtdmh4gP3pmfIWlseIhgR8HhgJmkrHgM5jCV5cIRC0EM2sVbvwvLEcNBGBJXU&usqp=CAU" alt="">
+                </div>
+            </div>
+            <div class="child">
+                <div class="image">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNIkaDsAkYu64W7hAD9qng1npbLVNxaTQ39w&s" alt="">
+                </div>
+                <div class="name">
+                    <h4>Giyu Tomioka</h4>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjvDbFirMtdmh4gP3pmfIWlseIhgR8HhgJmkrHgM5jCV5cIRC0EM2sVbvwvLEcNBGBJXU&usqp=CAU" alt="">
+                </div>
+            </div>
+            <div class="child">
+                <div class="image">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlHoPjre5s9hOOZAXZW5BzZ4mwwRJbaGZcDA&s" alt="">
+                </div>
+                <div class="name">
+                    <h4>Gyomei Himejima</h4>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjvDbFirMtdmh4gP3pmfIWlseIhgR8HhgJmkrHgM5jCV5cIRC0EM2sVbvwvLEcNBGBJXU&usqp=CAU" alt="">
+                </div>
+            </div>
+            <div class="child">
+                <div class="image">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8yiLOdWOruzFGQkMrT-a9UN_UdmAuzaDGQw&s" alt="">
+                </div>
+                <div class="name">
+                    <h4>Kyojuro Rengoku</h4>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjvDbFirMtdmh4gP3pmfIWlseIhgR8HhgJmkrHgM5jCV5cIRC0EM2sVbvwvLEcNBGBJXU&usqp=CAU" alt="">
+                </div>
+            </div>
+        </div>
+        <div id="main-3">
+            <div class="child">
+                <div class="image">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVt28Xk4N3oXfNQn9dFroE-KuWcxUL838wUw&s" alt="">
+                </div>
+                <div class="name">
+                    <h4>Mitsuri Kanroji</h4>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjvDbFirMtdmh4gP3pmfIWlseIhgR8HhgJmkrHgM5jCV5cIRC0EM2sVbvwvLEcNBGBJXU&usqp=CAU" alt="">
+                </div>
+            </div>
+            <div class="child">
+                <div class="image">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTMcX6l6ICZzqQqG4F8vwRqBIBLxGnt5iYiQ&s" alt="">
+                </div>
+                <div class="name">
+                    <h4>Tengen Uzui</h4>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjvDbFirMtdmh4gP3pmfIWlseIhgR8HhgJmkrHgM5jCV5cIRC0EM2sVbvwvLEcNBGBJXU&usqp=CAU" alt="">
+                </div>
+            </div>
+            <div class="child">
+                <div class="image">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ40q_g6bZsubU_R1CKSLO8ar9Txh9X1duQeA&s" alt="">
+                </div>
+                <div class="name">
+                    <h4>Tanjiro Kamado</h4>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjvDbFirMtdmh4gP3pmfIWlseIhgR8HhgJmkrHgM5jCV5cIRC0EM2sVbvwvLEcNBGBJXU&usqp=CAU" alt="">
+                </div>
+            </div>
+            <div class="child">
+                <div class="image">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQh4mVBLg5CF_uEJfm3FobpJ0dW62ytKS6t8A&s" alt="">
+                </div>
+                <div class="name">
+                    <h4>Obanai Iguro</h4>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjvDbFirMtdmh4gP3pmfIWlseIhgR8HhgJmkrHgM5jCV5cIRC0EM2sVbvwvLEcNBGBJXU&usqp=CAU" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
