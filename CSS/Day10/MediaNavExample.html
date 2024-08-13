@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query Navbar Example</title>
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+            font-size: 14px;
+        }
+        #navbar{
+            border: 2px solid black;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        #logo img{
+            width: 80px;
+        }
+        #logo{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #menuItem{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 70%;
+        }
+        #menuItem a{
+            text-decoration: none;
+            color: gray;
+        }
+        #menuItem>button{
+            background-color: yellow;
+            border: none;
+            padding: 8px 10px;
+            border-radius: 12px;
+        }
+        .ri-menu-line{
+            display: none;
+        }
+        #exploreProgram{
+            display: none;
+        }
+        @media all and (min-width:450px) and (max-width:1000px){
+            #menuItem{
+                display: none;
+            }
+            #navbar{
+                justify-content: space-around;
+                flex-direction: row-reverse;
+            }
+            #logo img{
+                width: 100px;
+            }
+            .ri-menu-line{
+                display: block;
+                font-size: 40px;
+                background-color: blue;
+                padding: 5px;
+            }
+            #exploreProgram{    
+                display: none;
+            }
+        }
+        @media all and (max-width:450px){
+            #menuItem{
+                display: none;
+            }
+            #logo img{
+                width: 100px;
+            }
+            #exploreProgram{
+                display: block;
+                background-color: blue;
+                color: white;
+                padding: 13px 10px;
+                border-radius: 13px;
+                width: 110px;
+                text-align: center;
+                font-weight: 700;
+            }
+            .ri-menu-line{
+                display: block;
+                font-size: 40px;
+                background-color: black;
+                padding: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="navbar">
+        <div id="exploreProgram">Explore Program</div>
+        <div id="logo">
+            <img src="https://uploads.vw-mms.de/system/production/images/vwn/030/145/images/7a0d84d3b718c9a621100e43e581278433114c82/DB2019AL01950_web_1600.jpg?1649155356" alt="LOGO">
+        </div>
+        <div id="menuItem">
+            <a href="">Home</a>
+            <a href="">AboutUs</a>
+            <a href="">Courses</a>
+            <a href="">Online Registration</a>
+            <a href="">Certification</a>
+            <a href="">Corporate Training</a>
+            <a href="">Placements</a>
+            <a href="">Blogs</a>
+            <button>Contact Us</button>
+        </div>
+        <i class="ri-menu-line"></i>
+    </div>
+</body>
+</html>
