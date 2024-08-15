@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=s, initial-scale=1.0">
+    <title>Scale Property</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+        }
+        #box{
+            border: 3px solid black;
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            transform: rotate(0deg) scaleX(1);
+            transition: transform 2s 0s ease-in-out;
+        }
+        #box:hover{
+            transform: rotate(180deg) scaleX(2);
+        }
+    </style>
+</head>
+<body>
+    <div id="box"></div>
+</body>
+</html>
