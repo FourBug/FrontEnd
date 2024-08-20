@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EM and REM CSS UNIT</title>
+    <style>
+        *{
+            /* 1 rem = 16px */
+            margin: 0;
+            padding: 0;
+            font-size: 1rem;
+        }
+        #box{
+            border: 2px solid black;
+            padding: 10px;
+            /* implicit Styling */
+        }
+        #box>p{
+            font-size: 2em;
+        }
+        #box2>p{
+            font-size: 1.5em;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, ex odio tempore ratione at fugit veritatis hic magnam perspiciatis cupiditate itaque deserunt natus totam molestias aliquam voluptates vero assumenda! Nisi!</p>
+    </div> 
+    <div id="box2">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, accusantium quidem cum, laudantium dolor optio itaque sit consectetur unde, eligendi recusandae iure quibusdam debitis deleniti consequatur labore aut explicabo atque.</p>
+    </div>   
+</body>
+</html>
