@@ -1,0 +1,16 @@
+.red{
+    font-size: 20px;
+    background-color: red;
+    border: 5px solid black;
+}
+.green{
+    font-size: 12px;
+    background-color: green;
+    border: 10px solid red;
+}
+#form{
+    background-color: skyblue;
+    padding: 20px;
+    width: 400px;
+    height: 300px;
+}
