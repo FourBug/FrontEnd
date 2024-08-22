@@ -1,5 +1,5 @@
 document.write("I am From app.js");
-document.write("I Java");
-document.write("I C#");
-document.write("I CPP");
+document.write("I am Java");
+document.write("I am C#");
+document.write("I am CPP");
 document.write("Hello World");
