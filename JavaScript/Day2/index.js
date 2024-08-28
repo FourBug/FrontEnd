@@ -16,7 +16,7 @@ Scope of Variable
 var a;  (Global)
 var a = 10; (Global)
 let b = 20; (Local)
-const c = 30; (Constant, You can not change the data of this variable)
+const c = 30; (Local Variable, Constant, You can not change the data of this variable)
 
 
 */
@@ -36,7 +36,7 @@ const c = 30; (Constant, You can not change the data of this variable)
 // }
 // const c = 30;
 // console.log(a);
-// // console.log(b); You can print here beacuse of local varibale
+// console.log(b); // You can print here beacuse of local varibale
 // console.log(c);
 // const pi = 3.14;
 
