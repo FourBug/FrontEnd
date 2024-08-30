@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactivity With JavaScript</title>
+</head>
+<body>
+    
+    <!-- <script>
+        var num = 5;
+        for(let a = 1;a<=10;a++)
+            document.write(num+" * "+a+" = "+num*a+"<br>");
+    </script> -->
+
+    <!-- Enter A Number : <input type="text" id="num1"/> <br/>
+    Enter B Number : <input type="text" id="num2"/> <br/>
+    <input type="submit" onclick="add()">
+    <h1 id="sum"></h1>
+    <script>
+        function add(){
+            let a = parseInt(document.getElementById("num1").value);
+            let b = parseInt(document.getElementById("num2").value);
+            let num3 = a+b;
+            document.getElementById("sum").innerHTML="Addiiton : "+num3;
+        }
+    </script> -->
+
+    <!-- Enter A Number : <input type="number" id="num1"/> <br/>
+    <input type="submit" onclick="table()">
+    <h4 id="sum"></h4>
+    <script>
+        function table(){
+            let tab = "";
+            let num = parseInt(document.getElementById("num1").value);
+            for(let a=1;a<=10;a++)
+                tab=tab+num+" * "+a+" = "+num*a+"<br/>";
+            document.getElementById("sum").innerHTML=tab;
+        }
+    </script> -->
+
+    <!-- <h1>Find Factorial Of A Number</h1>
+    <h3>Enter A Number : <input type="number" id="num1"/></h3>
+    <input type="submit" onclick="fact()"/>
+    <h2 id="sum"></h2>
+
+    <script>
+        function fact(){
+            let fact = 1;
+            let num = parseInt(document.getElementById("num1").value);
+            for(let i=1;i<=num;i++)
+                fact=fact*i;
+            document.getElementById("sum").innerHTML="Factorial : "+fact;
+        }
+    </script> -->
+
+    Enter Your Name : <input type="text" id="name1"/><br/>
+    <input type="submit" onclick="username()">
+    <h1 id="namehere"></h1>
+    <script>
+        function username(){
+            let myname = document.getElementById("name1").value;
+            document.getElementById("namehere").innerHTML=myname;
+        }
+    </script>
+</body>
+</html>
